@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <p>Descubra seu Índice de Massa Corporal</p>
+
+        <form id="form-imc">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Ex: Gabriel" required>
+            </div>
+
+            <div class="linha-inputs">
+                <div class="campo">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="number" id="peso" step="0.1" placeholder="Ex: 70.5" required>
+                </div>
+
+                <div class="campo">
+                    <label for="altura">Altura (m):</label>
+                    <input type="number" id="altura" step="0.01" placeholder="Ex: 1.75" required>
+                </div>
+            </div>
+
+            <button type="submit">Calcular IMC</button>
+        </form>
+
+        <div id="resultado" class="escondido">
+            <h2>Seu IMC é: <span id="valor-imc">0</span></h2>
+            <p id="texto-situacao"></p>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
